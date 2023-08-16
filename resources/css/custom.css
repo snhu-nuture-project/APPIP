@@ -1,0 +1,260 @@
+:root {
+  /* Brand colors */
+  --heritage-blue: #0a3370;
+  --sky-blue: #009dea;
+  --golden-yellow: #fdb913;
+  --golden-hover: #fee097;
+  --ink-blue: #00244e;
+  --hero-blue: #2066a2;
+
+  /* Font family */
+  --header-font: "Oswald", sans-serif;
+  --text-font: "Open Sans", sans-serif;
+
+  /* Font size */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2rem;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+/* Utilities */
+.base-btn-style {
+  padding: 0.6rem 0.9rem;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: var(--text-font);
+  font-weight: 700;
+}
+
+.mt-rem-5 {
+  margin-top: 5rem !important;
+}
+
+.btn-primary {
+  background-color: var(--golden-yellow) !important;
+  border-color: var(--golden-yellow);
+  color: var(--ink-blue) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--golden-hover) !important;
+  border-color: var(--golden-hover) !important;
+}
+
+h1,
+h2 {
+  font-family: var(--header-font) !important;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--heritage-blue);
+  font-size: 1.75rem;
+}
+h3 {
+  color: var(--heritage-blue);
+  font-size: var(--font-size-lg);
+  font-family: var(--text-font);
+  font-weight: 700;
+}
+
+p,
+li {
+  font-family: var(--text-font);
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  color: #666666;
+}
+
+a.head-link {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  line-height: 24px;
+  font-family: var(--text-font);
+  color: #fff;
+  text-decoration: none;
+}
+
+a.head-link:hover,
+a.head-link:focus {
+  text-decoration: underline #70abdb 2px;
+  text-underline-offset: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+/* NAVIGATION */
+
+header {
+  background-color: var(--heritage-blue);
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  background-color: var(--hero-blue);
+  color: #fff;
+}
+
+.hero-container {
+  max-width: 680px !important;
+}
+
+/* HIGH SCHOOL SECTION */
+
+.high-school-section {
+  margin-top: 5rem;
+}
+
+.hs-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  border: 2px #efefef solid;
+}
+
+.submit-info-text {
+  line-height: 22px;
+}
+
+.icon-doc {
+  width: 68px;
+}
+/* Call Section */
+
+.call-section {
+  height: 500px;
+  background-image: url(https://client-data.knak.io/production/email_assets/5fd10b569d941/7YM4yrl8LCMOtgEIOTdYNuAbb4P4TfDRDRPPg0YY.jpg);
+  background-size: cover;
+}
+
+.call-us-img {
+  display: none;
+}
+
+/* TRANSCRIPT SECTION */
+
+.transcript-section {
+  margin-top: 5rem;
+}
+
+.accordion-header {
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  font-family: var(--text-font) !important;
+  color: var(--heritage-blue) !important;
+}
+
+.accordion-button.collapsed::after {
+  font-family: "FontAwesome";
+  content: "\f067";
+  font-size: 1rem;
+  color: #0a3370;
+  float: right;
+  background-image: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  font-family: "FontAwesome";
+  content: "\f068";
+  color: #0a3370;
+  float: right;
+  font-size: 1.25rem;
+  background-image: none;
+  transform: none;
+}
+.snhu-logo {
+  width: 100%;
+  height: auto;
+}
+
+.icon-doc-wrapper {
+  justify-content: center;
+}
+
+.thank-you-btn {
+display: flex;
+justify-content: center;
+
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 40rem) {
+  .call-section {
+    background-position: center;
+    height: auto;
+    background: #efefef;
+  }
+
+  .hero-banner-mobile {
+    display: flex;
+  }
+
+  .mx-4-mobile {
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+  }
+}
+
+/* Medium devices (768px) */
+@media screen and (max-width: 48rem) {
+  .nav-container {
+    justify-content: center !important;
+  }
+
+  .call-section {
+    height: 650px;
+    background: #efefef;
+  }
+
+  .base-btn-style {
+    width: 100%;
+  }
+  .icon-doc-wrapper {
+    justify-content: left;
+    margin-bottom: 1rem;
+  }
+
+  .call-us-img {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .thank-you-btn {
+    display: block;
+  }
+}
+
+/* Large devices such as laptops (1024px) */
+@media only screen and (max-width: 64em) {
+  .call-section {
+    height: 400px;
+    background-color: #efefef;
+  }
+
+  .mobile-call-img-container {
+    display: flex;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up)  */
+@media only screen and (max-width: 80em) {
+  .call-section {
+    height: 350px;
+    background-color: #efefef;
+  }
+}
